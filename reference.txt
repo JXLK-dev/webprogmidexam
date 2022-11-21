@@ -1,3 +1,5 @@
 https://getbootstrap.com/docs/4.0/components/dropdowns/
 https://getbootstrap.com/docs/5.2/getting-started/download/
 https://getbootstrap.com/docs/3.4/components/#navbar
+https://stackoverflow.com/questions/17591181/how-to-get-the-current-url-inside-if-statement-blade-in-laravel-4
+https://www.youtube.com/watch?v=gxN0ky4_q1U&t=1s

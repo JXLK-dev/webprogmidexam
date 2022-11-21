@@ -1,14 +1,52 @@
+body {
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
 .navitem {
     margin-left: 5px;
     margin-right: 5px;
-    color: blue;
     font-weight: 500;
+    color: blue;
+}
+
+.position-content {
+    width: 70vh;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.sub-header {
+    color: white;
+    font-size: 25px;
+    background-color: grey;
+    margin-top: 75px;
+
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.navitem a {
+    text-decoration: none;
+    color: blue;
 }
 
 .header-size {
     height: 110px;
     text-align: center;
     vertical-align: middle;
+}
+
+.alignMiddle {
+    top: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .title {

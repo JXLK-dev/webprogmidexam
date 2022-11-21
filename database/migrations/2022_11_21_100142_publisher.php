@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Books extends Migration
+class Publisher extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class Books extends Migration
      */
     public function up()
     {
-        Schema::create('books', function (Blueprint $table) {
+        //
+        Schema::create('publishers', function (Blueprint $table) {
             $table->id();
-            $table->string('publisher_id');
-            $table->string('title');
-            $table->string('author');
-            $table->integer('year');
-            $table->string('synopsis');
+            $table->string('name');
+            $table->string('address');
+            $table->string('phone');
+            $table->string('email');
             $table->string('image');
         });
     }

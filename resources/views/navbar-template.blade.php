@@ -22,27 +22,30 @@
 
 <body>
     <div class="header-size bg-warning">
-        <div class="row h-100 align-items-center">
-            <h1 class="title text-white">Giant Book Supplier</h1>
+        <div class="align-middle row h-100 d-table text-center w-100">
+            <h1 class="align-middle title text-white d-table-cell">Giant Book Supplier</h1>
         </div>
     </div>
-    <ul class="nav nav-pills navbar-center">
-        <li class="btn navitem" role="presentation">Home</li>
-        <div role="presentation" class="category">
-            <button class="navitem btn dropdown-toggle" type="button" id="category-menu" data-toggle="dropdown">
-                category
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Category 1</a>
-                <a class="dropdown-item" href="#">Category 2</a>
-                <a class="dropdown-item" href="#">Category 3</a>
-                <a class="dropdown-item" href="#">Category 4</a>
+    <div class="w-100">
+        <ul class="nav nav-pills navbar-center">
+            <li class="btn navitem" role="presentation"><a href="/">Home</a></li>
+            <div role="presentation" class="category">
+                <button class="navitem btn dropdown-toggle" type="button" id="category-menu" data-toggle="dropdown">
+                    Category
+                </button>
+                <div class="dropdown-menu">
+                    {{-- @foreach ($category as $key->$cat)
+                    @endforeach --}}
+                </div>
             </div>
-        </div>
-        <li role="presentation" class="btn navitem">Publisher</li>
-        <li role="presentation" class="btn navitem">Contact</li>
-    </ul>
-
+            <li role="presentation" class="btn navitem"><a href="/publishers">Publishers</a></li>
+            <li role="presentation" class="btn navitem"><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+    @yield('content')
+    <footer class="text-center fixed-bottom bg-primary text-white">
+        &#169 Happy Book Store 2022
+    </footer>
 </body>
 
 </html>
