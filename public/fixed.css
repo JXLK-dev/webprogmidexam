@@ -1,0 +1,22 @@
+.navitem {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: blue;
+    font-weight: 500;
+}
+
+.header-size {
+    height: 110px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.title {
+    font-weight: 100;
+}
+
+.nav-pills.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
