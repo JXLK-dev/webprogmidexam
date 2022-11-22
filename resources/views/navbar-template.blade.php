@@ -34,8 +34,9 @@
                     Category
                 </button>
                 <div class="dropdown-menu">
-                    {{-- @foreach ($category as $key->$cat)
-                    @endforeach --}}
+                    @foreach ($categories as $cat)
+                        <a href="/category/{{ $cat->id }}" class="dropdown-item">{{ $cat->name }}</a>
+                    @endforeach
                 </div>
             </div>
             <li role="presentation" class="btn navitem"><a href="/publishers">Publishers</a></li>

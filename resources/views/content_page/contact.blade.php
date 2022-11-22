@@ -13,5 +13,9 @@
         <h3>
             08.00-20.00
         </h3>
+        <h1>Contact:</h1>
+        <h3>
+            Phone: 021-08899776655 <br>Email: happybookstore@happy.com
+        </h3>
     </div>
 @endsection

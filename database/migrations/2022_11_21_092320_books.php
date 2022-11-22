@@ -15,7 +15,7 @@ class Books extends Migration
     {
         Schema::create('books', function (Blueprint $table) {
             $table->id();
-            $table->string('publisher_id');
+            $table->foreignId('publisher_id');
             $table->string('title');
             $table->string('author');
             $table->integer('year');

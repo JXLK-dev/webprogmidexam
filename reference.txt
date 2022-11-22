@@ -3,3 +3,5 @@ https://getbootstrap.com/docs/5.2/getting-started/download/
 https://getbootstrap.com/docs/3.4/components/#navbar
 https://stackoverflow.com/questions/17591181/how-to-get-the-current-url-inside-if-statement-blade-in-laravel-4
 https://www.youtube.com/watch?v=gxN0ky4_q1U&t=1s
+https://stackoverflow.com/questions/39880340/laravel-how-to-send-variable-from-one-page-to-another-in-blade
+https://stackoverflow.com/questions/39880340/laravel-how-to-send-variable-from-one-page-to-another-in-blade

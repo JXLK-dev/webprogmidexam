@@ -14,7 +14,7 @@ class Publisher extends Migration
     public function up()
     {
         //
-        Schema::create('publishers', function (Blueprint $table) {
+        Schema::create('Publishers', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('address');

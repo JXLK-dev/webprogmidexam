@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [Page_Controller::class, ('index')]);
-Route::get('/book_detail', [Page_Controller::class, ('book_detail')]);
-Route::get('/categories', [Page_Controller::class, ('categories')]);
+Route::get('/book_detail/{book_id}', [Page_Controller::class, ('book_detail')]);
+Route::get('/category/{cat_id}', [Page_Controller::class, ('category')]);
 Route::get('/publishers', [Page_Controller::class, ('publishers')]);
 Route::get('/contact', [Page_Controller::class, ('contact')]);
