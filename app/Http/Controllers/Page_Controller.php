@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Book;
 use App\Models\Category;
+use App\Models\Publisher;
 use Categories;
 use Illuminate\Http\Request;
 
@@ -34,7 +35,8 @@ class Page_Controller extends Controller
     public function publishers()
     {
         $categories = Category::all();
-        return view('content_page/publishers')->with('categories', $categories);
+        $publishers = Publisher::all();
+        return view('content_page/publishers')->with('categories', $categories)->with('publishers', $publishers);
     }
     public function contact()
     {

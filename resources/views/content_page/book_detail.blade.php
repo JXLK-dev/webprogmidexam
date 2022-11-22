@@ -4,7 +4,7 @@
         Book Detail
     </div>
     <div class="position-content book-detail-content">
-        <img src="" alt="image">
+        <img src="{{ asset($book->image) }}" alt="image">
         <h1>Title: {{ $book->title }}</h1>
         <h1>Author: {{ $book->author }}</h1>
         <h1>Publisher: {{ $book->author }}</h1>

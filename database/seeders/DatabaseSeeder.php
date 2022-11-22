@@ -34,7 +34,7 @@ class DatabaseSeeder extends Seeder
             'author' => 'jojon',
             'year' => 2020,
             'synopsis' => 'This is the end',
-            'image' => 'image/name.jpg'
+            'image' => 'image/books/book.jpg'
         ]);
         DB::table('books')->insert([
             'publisher_id' => '1',
@@ -42,7 +42,7 @@ class DatabaseSeeder extends Seeder
             'author' => 'jojon',
             'year' => 2020,
             'synopsis' => 'This is the end',
-            'image' => 'image/name.jpg'
+            'image' => 'image/books/book.jpg'
         ]);
         DB::table('books')->insert([
             'publisher_id' => '1',
@@ -50,15 +50,15 @@ class DatabaseSeeder extends Seeder
             'author' => 'jojon',
             'year' => 2020,
             'synopsis' => 'This is the end',
-            'image' => 'image/name.jpg'
+            'image' => 'image/books/book.jpg'
         ]);
         DB::table('books')->insert([
-            'publisher_id' => '1',
+            'publisher_id' => '2',
             'title' => 'test',
             'author' => 'jojon',
             'year' => 2020,
             'synopsis' => 'This is the end',
-            'image' => 'image/name.jpg'
+            'image' => 'image/books/book.jpg'
         ]);
         DB::table('book_category')->insert([
             'category_id' => '1',
@@ -75,6 +75,20 @@ class DatabaseSeeder extends Seeder
         DB::table('book_category')->insert([
             'category_id' => '1',
             'book_id' => '4'
+        ]);
+        DB::table('publishers')->insert([
+            'name' => 'joji',
+            'address' => 'Binus Alsut',
+            'phone' => '08123456789',
+            'email' => 'joji@gmail.com',
+            'image' => 'image/publishers/publisher.jpg'
+        ]);
+        DB::table('publishers')->insert([
+            'name' => 'joni',
+            'address' => 'Binus Alsut',
+            'phone' => '08123456789',
+            'email' => 'joni@gmail.com',
+            'image' => 'image/publishers/publisher.jpg'
         ]);
     }
 }

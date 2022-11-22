@@ -5,3 +5,6 @@ https://stackoverflow.com/questions/17591181/how-to-get-the-current-url-inside-i
 https://www.youtube.com/watch?v=gxN0ky4_q1U&t=1s
 https://stackoverflow.com/questions/39880340/laravel-how-to-send-variable-from-one-page-to-another-in-blade
 https://stackoverflow.com/questions/39880340/laravel-how-to-send-variable-from-one-page-to-another-in-blade
+https://laravel.com/docs/9.x/eloquent-relationships#many-to-many - many to many relationship
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fedit.org%2Fbook-covers&psig=AOvVaw3QZ_VcjkwV3sD9Y1qC0vxR&ust=1669203029069000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCOD6y_DYwfsCFQAAAAAdAAAAABAD -book logo
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kompas.com%2Ffood%2Fread%2F2021%2F11%2F14%2F180300075%2Fresep-koutie-goreng-lengkap-dengan-cara-bikin-kulitnya%3Fpage%3Dall&psig=AOvVaw0w0TLzJzNr3UpgZABycBop&ust=1669203317508000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNC3qYjZwfsCFQAAAAAdAAAAABAE - publisher logo

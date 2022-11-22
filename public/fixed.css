@@ -21,6 +21,10 @@ body {
     position: relative;
 }
 
+.position-content h2 {
+    margin-left: 10px;
+}
+
 .book-background {
     display: flex;
     flex-wrap: wrap;
@@ -52,6 +56,11 @@ body {
 
 .book-detail-content img {
     width: auto;
+    height: auto;
+}
+
+.pub-logo {
+    width: 70vh;
     height: auto;
 }
 
