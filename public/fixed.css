@@ -7,6 +7,7 @@ body {
 
 
 .navitem {
+    z-index: 1;
     margin-left: 5px;
     margin-right: 5px;
     font-weight: 500;
@@ -18,6 +19,53 @@ body {
     margin-right: auto;
     margin-left: auto;
     position: relative;
+}
+
+.book-background {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.margin-container {
+    z-index: 0;
+    margin: 5px;
+
+}
+
+.move-front {
+    z-index: 0;
+    cursor: pointer;
+}
+
+.book-content {
+    margin-left: 2px;
+    margin-right: 2px;
+    border: solid 1px;
+    width: 165px;
+    float: left;
+    z-index: 0;
+}
+
+.book-detail-content h1 {
+    font-size: 10px;
+}
+
+.book-detail-content img {
+    width: auto;
+    height: auto;
+}
+
+.book-content h1 {
+    font-size: 20px;
+}
+
+.book-content h2 {
+    font-size: 15px;
+}
+
+.book-content img {
+    height: 100px;
+    width: 165px;
 }
 
 .sub-header {

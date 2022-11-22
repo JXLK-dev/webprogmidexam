@@ -28,5 +28,53 @@ class DatabaseSeeder extends Seeder
         DB::table('categories')->insert([
             'name' => 'Category 4',
         ]);
+        DB::table('books')->insert([
+            'publisher_id' => '1',
+            'title' => 'test',
+            'author' => 'jojon',
+            'year' => 2020,
+            'synopsis' => 'This is the end',
+            'image' => 'image/name.jpg'
+        ]);
+        DB::table('books')->insert([
+            'publisher_id' => '1',
+            'title' => 'test',
+            'author' => 'jojon',
+            'year' => 2020,
+            'synopsis' => 'This is the end',
+            'image' => 'image/name.jpg'
+        ]);
+        DB::table('books')->insert([
+            'publisher_id' => '1',
+            'title' => 'test',
+            'author' => 'jojon',
+            'year' => 2020,
+            'synopsis' => 'This is the end',
+            'image' => 'image/name.jpg'
+        ]);
+        DB::table('books')->insert([
+            'publisher_id' => '1',
+            'title' => 'test',
+            'author' => 'jojon',
+            'year' => 2020,
+            'synopsis' => 'This is the end',
+            'image' => 'image/name.jpg'
+        ]);
+        DB::table('book_category')->insert([
+            'category_id' => '1',
+            'book_id' => '1'
+        ]);
+        DB::table('book_category')->insert([
+            'category_id' => '1',
+            'book_id' => '2'
+        ]);
+        DB::table('book_category')->insert([
+            'category_id' => '1',
+            'book_id' => '3'
+        ]);
+        DB::table('book_category')->insert([
+            'category_id' => '1',
+            'book_id' => '4'
+        ]);
     }
 }

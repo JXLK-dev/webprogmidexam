@@ -29,13 +29,13 @@
     <div class="w-100">
         <ul class="nav nav-pills navbar-center">
             <li class="btn navitem" role="presentation"><a href="/">Home</a></li>
-            <div role="presentation" class="category">
+            <div role="presentation" class="move-front category">
                 <button class="navitem btn dropdown-toggle" type="button" id="category-menu" data-toggle="dropdown">
                     Category
                 </button>
-                <div class="dropdown-menu">
+                <div class="move-front dropdown-menu">
                     @foreach ($categories as $cat)
-                        <a href="/category/{{ $cat->id }}" class="dropdown-item">{{ $cat->name }}</a>
+                        <a href="/category/{{ $cat->id }}" class="move-front dropdown-item">{{ $cat->name }}</a>
                     @endforeach
                 </div>
             </div>

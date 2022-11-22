@@ -13,19 +13,23 @@ class Page_Controller extends Controller
     public function index()
     {
         $categories = Category::all();
-        return view('content_page/index')->with('categories', $categories);
+        $books = Book::all();
+        return view('content_page/index')->with('categories', $categories)->with('books', $books);
     }
-    public function book_detail()
+    public function book_detail($book_id)
     {
         $categories = Category::all();
-        return view('content_page/book_detail')->with('categories', $categories);
+        $b = Book::all();
+        $book = Book::where('id', $book_id)->get()[0];
+        // dd($book);
+        return view('content_page/book_detail')->with('categories', $categories)->with('book', $book);
     }
     public function category($cat_id)
     {
         $categories = Category::all();
         $bookCategory = Category::where('id', $cat_id)->get()[0];
         $books = $bookCategory->books;
-        return view('content_page/category')->with('categories', $categories)->with('books', $books);
+        return view('content_page/category')->with('categories', $categories)->with('books', $books)->with('catName', $bookCategory);
     }
     public function publishers()
     {
