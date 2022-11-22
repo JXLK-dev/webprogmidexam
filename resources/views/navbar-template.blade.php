@@ -21,28 +21,33 @@
 </head>
 
 <body>
-    <div class="header-size bg-warning">
-        <div class="align-middle row h-100 d-table text-center w-100">
-            <h1 class="align-middle title text-white d-table-cell">Giant Book Supplier</h1>
+    <div class="position-fixed w-100 erase-top"style="z-index:1!important;">
+        <div class="header-size bg-warning">
+            <div class="align-middle row h-100 d-table text-center w-100">
+                <h1 class="align-middle title text-white d-table-cell">Giant Book Supplier</h1>
+            </div>
+        </div>
+        <div class="w-100 bg-white"style="z-index:3!important;background-color:white;">
+            <ul class="nav nav-pills navbar-center bg-white"style="z-index:1!important;">
+                <li class="btn navitem" role="presentation"><a href="/">Home</a></li>
+                <div role="presentation" class="category" style="z-index:1!important;">
+                    <button class="navitem btn dropdown-toggle" style="z-index:1!important;"type="button"
+                        id="category-menu" data-toggle="dropdown">
+                        Category
+                    </button>
+                    <div class="dropdown-menu" style="z-index:1!important;">
+                        @foreach ($categories as $cat)
+                            <a href="/category/{{ $cat->id }}" class="dropdown-item"
+                                style="z-index:1!important;">{{ $cat->name }}</a>
+                        @endforeach
+                    </div>
+                </div>
+                <li role="presentation" class="btn navitem"><a href="/publishers">Publishers</a></li>
+                <li role="presentation" class="btn navitem"><a href="/contact">Contact</a></li>
+            </ul>
         </div>
     </div>
-    <div class="w-100">
-        <ul class="nav nav-pills navbar-center">
-            <li class="btn navitem" role="presentation"><a href="/">Home</a></li>
-            <div role="presentation" class="move-front category">
-                <button class="navitem btn dropdown-toggle" type="button" id="category-menu" data-toggle="dropdown">
-                    Category
-                </button>
-                <div class="move-front dropdown-menu">
-                    @foreach ($categories as $cat)
-                        <a href="/category/{{ $cat->id }}" class="move-front dropdown-item">{{ $cat->name }}</a>
-                    @endforeach
-                </div>
-            </div>
-            <li role="presentation" class="btn navitem"><a href="/publishers">Publishers</a></li>
-            <li role="presentation" class="btn navitem"><a href="/contact">Contact</a></li>
-        </ul>
-    </div>
+    <h1 class="m-top"> </h1>
     @yield('content')
     <footer class="text-center fixed-bottom bg-primary text-white">
         &#169 Happy Book Store 2022
