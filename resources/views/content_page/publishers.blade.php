@@ -1,4 +1,4 @@
-@extends('for-book-loop')
+@extends('navbar-template')
 @section('content')
     @foreach ($publishers as $publishers)
         <div class="position-content sub-header">

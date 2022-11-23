@@ -1,4 +1,4 @@
-@extends('for-book-loop')
+@extends('navbar-template')
 @section('content')
     <div class="position-content sub-header">
         {{ $catName->name }}
